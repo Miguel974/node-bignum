@@ -1,0 +1,16 @@
+os:
+  - linux
+  - osx
+sudo: false
+language: node_js
+before_install:
+  - export JOBS=max
+node_js:
+  - 6
+  - 8
+  - 10
+notifications:
+  email:
+    - rod@vagg.org
+install: npm install
+script: npm test
